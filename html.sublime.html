@@ -1,0 +1,72 @@
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="main.css" />
+		<title> New Website </title>
+		
+	</head>
+		<script type="text/javascript">
+			function answer() {
+			var radio = document.getElementsByName("trivia"); 
+			var selection = false; 
+			var message = "";
+
+
+				for( var i = 0; i < radio.length; i++) { 
+					if(radio[i].value == "Princess" && radio[i].checked == true) { 
+						selection = true; 
+					} //end if statement 
+				} //end for loop
+
+					if(selection == true) {
+						message = message + "<b><p style='color:green'>Way to go!</p></b>"; 
+					} else { 
+						message = message + "<b><p style='color:red'>Try again my friend.</p></b>"; 
+					}
+					document.getElementById("response").innerHTML = message;
+
+			}
+
+
+
+		</script>
+	<body>
+		<marquee id="group">The Prince <br/>
+			<img src="C:\Users\Chandrika\Documents\Prince4.png"/>
+		</marquee> 
+		meat<br />vegetables
+		<strong class="strong1">minecraft</strong>
+		<u>500 hp</u>
+		<i>orespawn mod</i>
+		<h1>10 regular damage</h1>
+		<h2>fireballs</h2>
+		<h3>frostbreath</h3>
+		<h5>lightning</h5>
+		<hr>
+		<marquee id="group">The Princess<br/>
+			<img src="C:\Users\Chandrika\Documents\princess2.jpg"/>
+		</marquee>
+		meat<br />vegetables
+		<strong class="strong1">minecraft</strong>
+		<u>500 hp</u>
+		<i>orespawn mod</i>
+		<h1>10 regular damage</h1>
+		<h2><span class="abc">purple powder</span></h2>
+		<h3>fireballs</h3>
+		<h4>frostbreath</h3>
+		<h5>lightning</h5>
+		<div class="trivia">
+			<h1>Which is stronger, Prince or Princess?</h1>
+				<form>
+					<div id="response"> </div>
+					<input type="radio" name="trivia" value="Prince">Prince	
+					<input type="radio" name="trivia" value="Princess">Princess
+				</form>
+			<input type="button" value="Submit" 
+			onclick="answer()">
+		</div>
+		 
+		<iframe width="790" height="500" src="https://www.youtube.com/embed/Qu6AUMvBP4E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<br>
+		<iframe width="790" height="500" src="https://www.youtube.com/embed/UOi3f37tM8s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	</body>
+</html>
