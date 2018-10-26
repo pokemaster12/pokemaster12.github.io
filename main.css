@@ -1,0 +1,39 @@
+u{color: orange;}
+
+.strong1 {color: yellow;}
+
+#group{color: green;}
+
+.trivia{border: 10px navy double;
+float: right;}
+
+.abc{color: purple; }
+
+/* postion.html CSS*/
+
+#one{
+height: 150px;
+width: 150px;
+background-color: red;
+display: inline-block;
+position: absolute;
+z-index: 1;}
+
+#two{
+height: 150px;
+width: 150px;
+background-color: blue;
+display: inline-block;
+position: absolute;
+z-index: 2;}
+
+#three{
+height: 150px;
+width: 150px;
+background-color: gold;
+display: inline-block;
+position: absolute;
+position: fixed; 
+left: 25%;}
+
+video{margin-right: 40px}
